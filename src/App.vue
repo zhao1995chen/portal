@@ -13,7 +13,7 @@ import Login from './components/Login.vue';
 export default {
   name: 'App',
   components: {
-    // HelloWorld,
+    // HelloWorld, // 引用 HelloWorld 為元件，使他可以被當成 tag 在 template 裡被使用
     Login
   }
 }

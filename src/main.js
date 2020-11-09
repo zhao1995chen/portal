@@ -1,12 +1,12 @@
-import Vue from 'vue'
-import App from './App.vue'
-import ElementUI from 'element-ui'
-import 'element-ui/lib/theme-chalk/index.css'
-import locale from 'element-ui/lib/locale/lang/zh-TW'
+import Vue from 'vue' // 引用 Vue
+import App from './App.vue' // 引用 App.vue
+import ElementUI from 'element-ui' // 引用 Element 套件
+import 'element-ui/lib/theme-chalk/index.css' // 引用套件的 CSS
+import locale from 'element-ui/lib/locale/lang/zh-TW' // 設定地區語言
 
 Vue.config.productionTip = false
-Vue.use(ElementUI, { locale });
+Vue.use(ElementUI, { locale })  // 讓 ElementUI 在 Vue 裡有被使用
 
 new Vue({
-  render: h => h(App),
-}).$mount('#app')
+  render: h => h(App), // 將 App.vue
+}).$mount('#app') // 渲染到 HTML 的 id="app" 的範圍裡
