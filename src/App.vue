@@ -2,19 +2,25 @@
   <div id="app">
     <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
     <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
-    <Login/>
+    <router-view></router-view>
+    <!-- <router-link  to="/login"></router-link> -->
+    <!-- <router-link  to="/signup"></router-link> -->
+    <!-- <Login/> -->
+    <!-- <SignUp/> -->
   </div>
 </template>
 
 <script>
 // import HelloWorld from './components/HelloWorld.vue'
-import Login from './components/Login.vue';
+// import Login from './components/Login.vue';
+// import SignUp from './components/SignUp.vue';
 
 export default {
   name: 'App',
   components: {
     // HelloWorld, // 引用 HelloWorld 為元件，使他可以被當成 tag 在 template 裡被使用
-    Login
+    // Login,
+    // SignUp
   }
 }
 </script>
